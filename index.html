@@ -8,32 +8,11 @@
   </head>
   <body>
     <main>
-      <h1>Crie sua conta</h1>
-      
-    <form action="">
-      <div class="input-container">
-        <label id="labelNome" for="inputNome">Nome<span>*</span></label>
-        <input type="text" id="inputNome" placeholder="Digite o seu nome">
+      <span id="limiteLampada">A lampada ainda pode ser ligada 5 vezes!</span>
+      <img src="./assets/img/lampada-desligada.png" id="lampada">
+      <div class="toggle-container">
+        <div id="buttonToggle" class="toggle-button"></div>
       </div>
-  
-      <div class="input-container">
-        <label id="labelCPF" for="inputCPF">CPF<span>*</span></label>
-        <input type="text" id="inputCPF" placeholder="Digite o seu CPF">
-      </div>
-  
-      <div class="input-container">
-        <label id="labelTelefone" for="inputTelefone">Telefone<span>*</span></label>
-        <input type="text" id="inputTelefone" placeholder="Digite o seu telefone">
-      </div>
-  
-      <div class="input-container">
-        <label id="labelSenha" for="inputSenha">Senha<span>*</span></label>
-        <input type="password" id="inputSenha" placeholder="Digite a sua senha">
-      </div>
-      
-      <button type="button">Cadastrar</button>
-    </form>
-
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
