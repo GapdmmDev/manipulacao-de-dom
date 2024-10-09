@@ -3,10 +3,10 @@ const toggleButton = document.getElementById('buttonToggle') as HTMLElement;
 const lampada = document.getElementById('lampada') as HTMLImageElement;
 const limiteLampada = document.getElementById('limiteLampada') as HTMLSpanElement;
 const body = document.querySelector<HTMLBodyElement>('body');
-let isOn = false;
-const limiteClicks = Math.floor(Math.random() * 8);
-let contador = 0;
-let limiteLampadaTexto = limiteClicks;
+let isOn: boolean = false;
+const limiteClicks: number = Math.floor(Math.random() * 8);
+let contador: number = 0;
+let limiteLampadaTexto: number = limiteClicks;
 
 limiteLampada.textContent = `A lampada pode ser ativada ${limiteLampadaTexto} vezes`;
 
