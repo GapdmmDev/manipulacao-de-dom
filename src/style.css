@@ -1,7 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -9,56 +8,84 @@
 }
 
 body {
-  background-color: #1a1a1a;
-  height: 100vh;
+  background-color: #D2D8DF;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   padding: 90px 0 0 0;
-  transition: background-color 0.25s ease;
 }
 
-main{
-  background-color: #f6f6f6;
-  border-radius: 12px;
-  padding: 20px;
-  height: 530px;
-  width: 400px;
+form {
+  background-color: #ffffff;
+  width: 700px;
+  border-radius: 16px;
+  padding: 48px 48px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  box-shadow: 7px 7px 15px -7px rgba(0, 0, 0, 0.048);
 
-  & > img {
-    height: 440px;
-    width: 338px;
-    user-select: none;
+  &> button {
+    background-color: #164AFF;
+    border: none;
+    width: 100%;
+    color: #FFF;
+    padding: 16px;
+    border-radius: 8px;
   }
+
+  &> .input-group{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+    &> h1 {
+      margin: 0 0 12px 0;
+      font-size: 20px;
+    }
+
+    &> .row {
+      display: flex;
+      gap: 30px;
+  
+      &> .input-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    
+        &> input {
+          background-color: none;
+          border: 1px solid #d9dde4e8;
+          outline: #577CFF;
+          height: 40px;
+          padding-left: 12px;
+          border-radius: 8px;
+  
+        }
+    
+        &> label {
+          color: #4e515a;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+
+  
+
+  
 }
 
-.toggle-container {
-  width: 60px;
-  height: 30px;
-  padding: 2px;
-  background-color: #CCC; /* Cor inicial do OFF */
-  border-radius: 30px;
-  position: relative;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Animação suave para a cor de fundo */
+/* .nome{
+  width: 200px;
 }
 
-.toggle-button {
-  width: 26px;
-  height: 26px;
-  background-color: white; /* Cor da bolinha */
-  border-radius: 34px;
-  position: absolute;
-  margin: auto;
-  left: 5px;
-  top: 0;
-  bottom: 0;
- 
-  transition: left .25s ease-in-out; /* Animação suave para mover a bolinha */
-}
+.email {
+  width: 240px;
+} */
